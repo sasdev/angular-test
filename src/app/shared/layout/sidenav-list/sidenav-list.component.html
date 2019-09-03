@@ -1,0 +1,7 @@
+<mat-nav-list>
+        <ng-container *ngFor="let link of links">
+        <a mat-list-item routerLinkActive="mat-warn" color="accent" routerLink="/{{link.path}}"  (click)="onSidenavClose()">
+            {{link.path}}
+        </a>
+        </ng-container>
+</mat-nav-list>

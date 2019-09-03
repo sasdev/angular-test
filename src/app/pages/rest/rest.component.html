@@ -1,0 +1,34 @@
+<div fxLayout="row wrap" fxLayoutGap="16px" fxLayoutAlign="center">
+    <h1>Restfull API</h1>
+</div>
+
+<div fxLayout="row wrap" fxLayoutGap="16px" fxLayoutAlign="center">
+    <p>This exmaple uses observables and loads the data from
+        <a href="https://jsonplaceholder.typicode.com/posts">https://jsonplaceholder.typicode.com/posts</a>
+    </p>
+</div>
+
+<div fxLayout="row wrap" fxLayoutGap="16px" fxLayoutAlign="center">
+    <button color="accent" mat-stroked-button (click)="list()">Fetch data</button>
+</div>
+
+
+<!-- =================== -->
+<!-- ===== Loading  ==== -->
+<!-- =================== -->
+
+<ng-template #empty> Loading... </ng-template>
+
+<!-- =================== -->
+<!-- ===== Create ====== -->
+<!-- =================== -->
+
+<div *ngIf="PostsObservable | async as photos else empty">
+        <ng-container *ngFor="let photo of photos; let i=index">
+                <div class="item">Id : {{ photo.id }} <br>
+                                  Title : {{ photo.title }} <br>
+                                  Body: {{ photo.body }} <br>
+                </div>
+        </ng-container>
+        <mat-divider></mat-divider>
+    </div>

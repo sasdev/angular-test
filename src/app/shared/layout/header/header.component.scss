@@ -1,0 +1,34 @@
+
+//Center logo text
+.center {
+    margin: auto;
+    width: 60%;
+    // border: 3px solid #73AD21;
+    padding: 10px;
+  }
+
+//Capetilze text
+
+button{
+    text-transform: capitalize;    
+}
+
+
+//Mobile Menu 
+ 
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+ 
+mat-toolbar{
+    border-radius: 3px;
+}
+ 
+@media(max-width: 959px){
+    mat-toolbar{
+        border-radius: 0px;
+    }
+}

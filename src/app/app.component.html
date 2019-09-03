@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<!-- <mat-sidenav-content>
+    <app-header></app-header>
+        <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</mat-sidenav-content> -->
+
+
+
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav role="navigation">
+        <!--this is a place for us to add side-nav code-->
+        <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <!--in here all the content must reside. We will add a navigation header as well-->
+        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+        <main>
+            <div class="container"
+            fxLayout="column"
+            fxLayout.xs="column"
+            fxLayoutAlign="space-around stretch"
+            fxLayoutGap="10px"
+            fxLayoutGap.xs="0">
+              <router-outlet></router-outlet>
+           </div>
+        </main>
+      </mat-sidenav-content>
+    </mat-sidenav-container>

@@ -1,0 +1,101 @@
+<h1>Theme</h1>
+
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutGap="10px" fxLayoutGap.xs="0">
+
+  <div fxFlex="50%">
+
+    <h2>Default Theme</h2>
+    <mat-card>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h4>H4</h4>
+      <h5>H5</h5>
+    </mat-card>
+
+    <mat-card>
+      
+      <button mat-raised-button color="primary">
+        Primary
+      </button>
+      <button mat-raised-button color="accent">
+        Accent
+      </button>
+      <button mat-raised-button color="warn">
+        Warning
+      </button>
+    </mat-card>
+
+
+
+    <mat-card>
+      <h2>Checkbox</h2>
+      <mat-checkbox class="checked" disabled [checked]= true>Check me!</mat-checkbox><br>
+      <mat-checkbox>Check me!</mat-checkbox><br>
+      <mat-checkbox>Check me!</mat-checkbox>
+    </mat-card>
+
+    <mat-card>
+      <h2>Form Inputs</h2>
+      <div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="Input">
+        </mat-form-field><br>
+
+        <mat-form-field>
+          <textarea matInput placeholder="Textarea"></textarea>
+        </mat-form-field><br>
+
+        <mat-form-field>
+          <mat-select placeholder="Select">
+            <mat-option value="option">Option</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-card>
+
+  </div>
+
+
+
+  <div fxFlex="50%">
+    <h2>Alternative Theme</h2>
+
+    <mat-card class="alternate-theme">
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+      </mat-card>
+
+    <mat-card class="alternate-theme">
+      <button mat-raised-button color="primary">
+        Primary
+      </button>
+      <button mat-raised-button color="accent">
+        Accent
+      </button>
+      <button mat-raised-button color="warn">
+        Warning
+      </button>
+      
+      <br>
+      <br>
+      <mat-divider></mat-divider>
+      <br>
+      <br>
+
+      <button mat-flat-button color="primary">
+        Primary
+      </button>
+      <button mat-flat-button color="accent">
+        Accent
+      </button>
+      <button mat-flat-button color="warn">
+        Warning
+      </button>
+
+    </mat-card>
+  </div>
+</div>

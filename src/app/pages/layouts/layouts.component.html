@@ -1,0 +1,87 @@
+<h1>Layouts</h1>
+
+<mat-divider></mat-divider>
+
+<h2>fxLayout Example 1</h2>
+
+<div class="container" fxLayout xLayout.xs="column" fxLayoutAlign="" fxLayoutGap="10px" fxLayoutGap.xs="0">
+   <div class="item" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.gt-sm="60%" fxFlexOffset.gt-sm="20%">
+         <p>Full Width</p>
+      </div>
+</div>
+
+<div class="container" fxLayout xLayout.xs="column" fxLayoutAlign="" fxLayoutGap="10px" fxLayoutGap.xs="0">
+   <div class="" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.gt-sm="60%" fxFlexOffset.gt-sm="20%">
+
+      <div class="container" fxLayout xLayout.xs="column" fxLayoutAlign="" fxLayoutGap="10px" fxLayoutGap.xs="0">
+         <div class="item" fxFlex="50%">
+            <p>Full Width</p>
+         </div>
+         <div class="item" fxFlex="50%">
+            <p>Full Width</p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="container" fxLayout xLayout.xs="column" fxLayoutAlign="" fxLayoutGap="10px" fxLayoutGap.xs="0">
+      <div class="" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.gt-sm="60%" fxFlexOffset.gt-sm="20%">
+   
+         <div class="container" fxLayout xLayout.xs="column" fxLayoutAlign="" fxLayoutGap="10px" fxLayoutGap.xs="0">
+            <div class="item" fxFlex="33%">
+               <p>Full Width</p>
+            </div>
+            <div class="item" fxFlex="33%">
+               <p>Full Width</p>
+            </div>
+            <div class="item" fxFlex="33%">
+                  <p>Full Width</p>
+               </div>
+         </div>
+      </div>
+   </div>
+
+
+
+<h2>fxLayout Example 2</h2>
+
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+   <div class="item item-1" fxFlex="15%">15%</div>
+   <div class="item item-2" fxFlex="20%" fxFlexOrder="3">20%</div>
+   <div class="item item-3" fxFlex>fxFlex</div>
+</div>
+
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+   <div class="item item-4" fxFlex fxFlexOffset="50px" fxFlexOffset.xs="0">fxFlex fxFlexOffset="50px"</div>
+   <div class="item item-5" fxFlex="200px">200px</div>
+</div>
+
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+   <div class="item item-6" fxFlex="400px">400px</div>
+</div>
+
+<h2>fxLayout Example 3</h2>
+
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutGap="10px" fxLayoutGap.xs="0">
+   <div class="item item-1" fxFlex="33%">33%</div>
+   <div class="item item-1" fxFlex="33%">33%</div>
+   <div class="item item-1" fxFlex="33%">33%</div>
+</div>
+
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutGap="10px" fxLayoutGap.xs="0">
+   <div class="item item-2" fxFlex="50%">50%</div>
+   <div class="item item-2" fxFlex="50%">50%</div>
+</div>
+
+<h2>Grid List for images</h2>
+
+<mat-grid-list cols="4" rowHeight="100px">
+   <mat-grid-tile [colspan]="3" [rowspan]="1">1
+   </mat-grid-tile>
+   <mat-grid-tile [colspan]="1" [rowspan]="2">2
+   </mat-grid-tile>
+   <mat-grid-tile [colspan]="1" [rowspan]="1">3
+   </mat-grid-tile>
+   <mat-grid-tile [colspan]="2" [rowspan]="1">4
+   </mat-grid-tile>
+</mat-grid-list>
