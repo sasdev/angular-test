@@ -10,13 +10,13 @@ import { RestComponent } from './pages/rest/rest.component'
 
 const routes: Routes = [
   {path: "home", component: HomeComponent},
-  {path: 'about', component: AboutComponent},
+  // {path: 'about', component: AboutComponent},
   {path: 'theme', component: ThemeComponent},
   {path: 'layouts', component: LayoutsComponent},
   {path: 'calculator', component: CalculatorComponent},
   {path: 'datatable', component: DatatableComponent },
-  {path: 'rest', component: RestComponent}
-  // {path: '**', component: HomeComponent}
+  {path: 'rest', component: RestComponent},
+  {path: '', component: HomeComponent}
 ];
 
 @NgModule({
